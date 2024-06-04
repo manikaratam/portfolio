@@ -1,0 +1,8 @@
+#about{
+    height: 100vh;
+}
+@media screen and(max-width:900px) {
+    #about{
+        height: auto;
+    } 
+}

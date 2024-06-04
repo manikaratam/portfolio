@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Poetsen+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jersey+15&family=Poetsen+One&display=swap');
+body{
+    font-family: '"Poetsen One", sans-serif' ;
+}
+.profile{
+    animation: moveImage 2s ease-in-out;
+}
+@keyframes moveImage {
+    0% { transform: translateX(150px); }
+        50% { transform: translateX(0); }
+        
+}
+@media screen and (max-width:1175px) {
+    .profile{
+       width: 400px;
+    }
+}
+@media screen and (max-width:800px) {
+    .profile{
+       width: 300px;
+    }
+}
