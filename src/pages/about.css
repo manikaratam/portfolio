@@ -1,8 +1,100 @@
-#about{
-    height: 100vh;
+.about-section {
+  padding: 110px 0;
+  background: #111827;
+  color: #f9fafb;
 }
-@media screen and(max-width:900px) {
-    #about{
-        height: auto;
-    } 
+
+.about-heading {
+  padding: 30px;
+}
+
+.about-subtitle {
+  display: inline-block;
+  margin-bottom: 18px;
+  color: #34d399;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 3px;
+}
+
+.about-heading h2 {
+  margin-bottom: 18px;
+  font-size: clamp(42px, 5vw, 64px);
+  font-weight: 800;
+  letter-spacing: -2px;
+}
+
+.about-heading h2 span {
+  color: #34d399;
+}
+
+.about-role {
+  color: #9ca3af;
+  font-size: 17px;
+  line-height: 1.8;
+}
+
+.about-content {
+  padding: 30px;
+  border-left: 2px solid rgba(52, 211, 153, 0.4);
+}
+
+.about-content p {
+  color: #d1d5db;
+  font-size: 16px;
+  line-height: 1.9;
+  margin-bottom: 20px;
+}
+
+.about-content .about-intro {
+  color: #f9fafb;
+  font-size: 27px;
+  font-weight: 600;
+  margin-bottom: 14px;
+}
+
+.about-name {
+  color: #34d399;
+  font-family: "Dancing Script", cursive;
+  font-size: 36px;
+  font-weight: 700;
+}
+
+.about-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  margin-top: 28px;
+}
+
+.about-buttons .btn {
+  padding: 12px 22px;
+  border-radius: 8px;
+  font-weight: 600;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.about-buttons .btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 767px) {
+  .about-section {
+    padding: 70px 0;
+  }
+
+  .about-heading,
+  .about-content {
+    padding: 20px;
+  }
+
+  .about-content {
+    border-left: none;
+    border-top: 2px solid rgba(52, 211, 153, 0.4);
+  }
+
+  .about-heading h2 {
+    font-size: 46px;
+  }
 }
